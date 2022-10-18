@@ -32,7 +32,7 @@ I=$r'['$r'*'$r'] '
 B=$r'['$y'+'$r'] '
 # path
 camera_path="/sdcard/DCIM/Camera"
-screenshots_path="/sdcard/DCIM/screenshots"
+screenshots_path="/sdcard/pictures/screenshots"
 camera_backup="${camera_path}/backup"
 screenshots_backup="${screenshots_path}/backup"
 manual_backup="/sdcard/DCIM/backup"
