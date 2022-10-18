@@ -52,7 +52,7 @@ shadow_size="85x10+0+10"
 shadow_color="${hex_color[3]}"
 # footer text
 owner_info=" @D_∆J"
-footer_text=" Follow me on isntagram @_zidanfadilaharsa"
+footer_text=" Follow me on Instagram: @_zidanfadilaharsa"
 #footer style
 #xshot
 footer_xy="+0+30"
@@ -126,21 +126,19 @@ count() {
 header() {
   echo -e "
 ${r}
-
              ╔═══════════════════════════════╗
-             ║        Raisa Shot            ║
+             ║        ${y}   RAISA SHOT${r}            ║
    ╔═════════╩═══════════════════════════════╩═════════╗
    ╚═══════════════════════════════════════════════════╝
    ╔════════════════════╗         ╔════════════════════╗
    ║ ${y}TIPE : ${b}${type}${space1}${y}TEMA : ${b}${color}${space2}
    ╚════════════════════╝         ╚════════════════════╝
-                  tekan ctrl + c for close"
+                  tekan ctrl + c untuk menghentikan"
 }
 help() {
   echo -e "${y}
   Usage :
       xshot [options1] [options2] [options3]
-
       options 1:
       -h       Show help display
       -i       show program information
@@ -152,17 +150,24 @@ help() {
       -d       dark theme
       options 3:
       -!       run autoshot without footer text
-
       examples:
       
       xshot -a -l
       xshot -a -l -!
-
   "
 }
 program_info(){
   echo -e "${r}             
-                 RaisaSHot
+                 ╔═══════════════════════════════╗
+                 ║    ╔═╗╔═╦═══╦╗ ╔╦═══╦════╗    ║
+                 ║    ╚╗╚╝╔╣╔═╗║║ ║║╔═╗║╔╗╔╗║    ║
+                 ║     ╚╗╔╝║╚══╣╚═╝║║ ║╠╝║║╚╝    ║
+                 ║     ╔╝╚╗╚══╗║╔═╗║║ ║║ ║║      ║
+                 ║    ╔╝╔╗╚╣╚═╝║║ ║║╚═╝║ ║║      ║
+                 ║    ╚═╝╚═╩═══╩╝ ╚╩═══╝ ╚╝      ║
+                 ║            ${b}V1.0.3${r}             ║
+                 ║       screenshot tools${r}        ║
+                 ╚═══════════════════════════════╝
 ${b}
             A tool to make your screenshots look better
                            Owner : D_4J
@@ -408,4 +413,3 @@ case "$1" in
     help
   ;;
 esac
-
