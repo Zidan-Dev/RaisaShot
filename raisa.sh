@@ -31,11 +31,11 @@ S=$r'['$g'✓'$r'] '
 I=$r'['$r'*'$r'] '
 B=$r'['$y'+'$r'] '
 # path
-camera_path="/sdcard/DCIM/Camera"
-screenshots_path="/sdcard/pictures/screenshots"
-camera_backup="${camera_path}/backup"
-screenshots_backup="${screenshots_path}/backup"
-manual_backup="/sdcard/DCIM/backup"
+camera_path="/sdcard/Pictures/share"
+screenshots_path="/sdcard/Pictures/screenshot"
+camera_backup="${camera_path}/share"
+screenshots_backup="${screenshots_path}/share"
+manual_backup="/sdcard/Pictures/share"
 # style
 #titlebar
 convert_titlebar="yes"
@@ -49,10 +49,10 @@ border_c_dark="${hex_color[0]}"
 border_c_light="${hex_color[2]}"
 # shadow
 shadow_size="85x10+0+10"
-shadow_color="${hex_color[3]}"
+shadow_color="${hex_color[4]}"
 # footer text
 owner_info=" @D_∆J"
-footer_text=" Follow me on Instagram: @_zidanfadilaharsa"
+footer_text=" Instagram @dimdim_day"
 #footer style
 #xshot
 footer_xy="+0+30"
@@ -125,20 +125,31 @@ count() {
 }
 header() {
   echo -e "
-${r}
+${r}             ╔═══════════════════════════════╗
+             ║    ╔═╗╔═╦═══╦╗ ╔╦═══╦════╗    ║
+             ║    ╚╗╚╝╔╣╔═╗║║ ║║╔═╗║╔╗╔╗║    ║
+             ║     ╚╗╔╝║╚══╣╚═╝║║ ║╠╝║║╚╝    ║
+             ║     ╔╝╚╗╚══╗║╔═╗║║ ║║ ║║      ║
+             ║    ╔╝╔╗╚╣╚═╝║║ ║║╚═╝║ ║║      ║
+             ║    ╚═╝╚═╩═══╩╝ ╚╩═══╝ ╚╝      ║
+             ║            ${b}V1.0.3${r}             ║
+             ║       screenshot tools${r}        ║
+             ╚═══════════════════════════════╝
+
              ╔═══════════════════════════════╗
-             ║        ${y}   RAISA SHOT${r}            ║
+             ║        ${y}    EXECUTE${r}            ║
    ╔═════════╩═══════════════════════════════╩═════════╗
    ╚═══════════════════════════════════════════════════╝
    ╔════════════════════╗         ╔════════════════════╗
-   ║ ${y}TIPE : ${b}${type}${space1}${y}TEMA : ${b}${color}${space2}
+   ║ ${y}TYPE : ${b}${type}${space1}${y}THEME : ${b}${color}${space2}
    ╚════════════════════╝         ╚════════════════════╝
-                  tekan ctrl + c untuk menghentikan"
+                  press ctrl + c for close"
 }
 help() {
   echo -e "${y}
   Usage :
       xshot [options1] [options2] [options3]
+
       options 1:
       -h       Show help display
       -i       show program information
@@ -150,10 +161,12 @@ help() {
       -d       dark theme
       options 3:
       -!       run autoshot without footer text
+
       examples:
       
       xshot -a -l
       xshot -a -l -!
+
   "
 }
 program_info(){
